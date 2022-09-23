@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "cron-swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Ponyboy47/Cron-Swift.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "3704a7fb47d9b5e3de7ccc0a52816313a8cf1600"
+      }
+    }
+  ],
+  "version" : 2
+}

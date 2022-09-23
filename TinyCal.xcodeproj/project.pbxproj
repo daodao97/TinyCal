@@ -1,0 +1,533 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BB9240E128C5C19900FDB19D /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9240C128C5C19800FDB19D /* Webservice.swift */; };
+		BB9240E228C5C19900FDB19D /* TinyCalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9240C228C5C19800FDB19D /* TinyCalApp.swift */; };
+		BB9240E428C5C19900FDB19D /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9240C528C5C19800FDB19D /* SettingsView.swift */; };
+		BB9240E628C5C19900FDB19D /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9240C828C5C19800FDB19D /* CalendarView.swift */; };
+		BB9240EB28C5C19900FDB19D /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9240CE28C5C19800FDB19D /* Date+Extensions.swift */; };
+		BB9240EE28C5C19900FDB19D /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9240D228C5C19800FDB19D /* Models.swift */; };
+		BB9240F028C5C19900FDB19D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9240D528C5C19800FDB19D /* ContentView.swift */; };
+		BB9240F128C5C19900FDB19D /* HolidayViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9240D728C5C19800FDB19D /* HolidayViewModel.swift */; };
+		BB9240F228C5C19900FDB19D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9240D928C5C19800FDB19D /* Constants.swift */; };
+		BB9240F328C5C19900FDB19D /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9240DA28C5C19800FDB19D /* Date.swift */; };
+		BB9240F428C5C19900FDB19D /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9240DB28C5C19800FDB19D /* File.swift */; };
+		BB9240F528C5C19900FDB19D /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9240DC28C5C19800FDB19D /* Common.swift */; };
+		BB9240F628C5C19900FDB19D /* EventMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9240DD28C5C19800FDB19D /* EventMonitor.swift */; };
+		BB9240F728C5C19900FDB19D /* EventBus.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9240DE28C5C19800FDB19D /* EventBus.swift */; };
+		BB9240F828C5C19900FDB19D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB9240DF28C5C19800FDB19D /* Assets.xcassets */; };
+		BB9240FB28C5C26F00FDB19D /* LaunchAtLogin.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB9240FA28C5C26F00FDB19D /* LaunchAtLogin.xcframework */; };
+		BB9240FC28C5C26F00FDB19D /* LaunchAtLogin.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BB9240FA28C5C26F00FDB19D /* LaunchAtLogin.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BB92410428C5C3BF00FDB19D /* Cron in Frameworks */ = {isa = PBXBuildFile; productRef = BB92410328C5C3BF00FDB19D /* Cron */; };
+		BBB09F6928CA00FB00F5E767 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBB09F6828CA00FA00F5E767 /* Preview Assets.xcassets */; };
+		BBCACE2A28C849790057DE3B /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBCACE2928C849790057DE3B /* Extensions.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BB9240FD28C5C26F00FDB19D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				BB9240FC28C5C26F00FDB19D /* LaunchAtLogin.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		BB9240AD28C5C15700FDB19D /* TinyCal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TinyCal.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB9240BF28C5C19800FDB19D /* TinyCal-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TinyCal-Bridging-Header.h"; sourceTree = "<group>"; };
+		BB9240C128C5C19800FDB19D /* Webservice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Webservice.swift; sourceTree = "<group>"; };
+		BB9240C228C5C19800FDB19D /* TinyCalApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TinyCalApp.swift; sourceTree = "<group>"; };
+		BB9240C528C5C19800FDB19D /* SettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		BB9240C828C5C19800FDB19D /* CalendarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		BB9240CE28C5C19800FDB19D /* Date+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
+		BB9240D228C5C19800FDB19D /* Models.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		BB9240D528C5C19800FDB19D /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BB9240D728C5C19800FDB19D /* HolidayViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HolidayViewModel.swift; sourceTree = "<group>"; };
+		BB9240D928C5C19800FDB19D /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		BB9240DA28C5C19800FDB19D /* Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		BB9240DB28C5C19800FDB19D /* File.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		BB9240DC28C5C19800FDB19D /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		BB9240DD28C5C19800FDB19D /* EventMonitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventMonitor.swift; sourceTree = "<group>"; };
+		BB9240DE28C5C19800FDB19D /* EventBus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventBus.swift; sourceTree = "<group>"; };
+		BB9240DF28C5C19800FDB19D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BB9240E028C5C19900FDB19D /* TinyCal.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = TinyCal.entitlements; sourceTree = "<group>"; };
+		BB9240FA28C5C26F00FDB19D /* LaunchAtLogin.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = LaunchAtLogin.xcframework; path = Carthage/Build/LaunchAtLogin.xcframework; sourceTree = "<group>"; };
+		BBA3F9C528C8C85600594789 /* FileKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = FileKit.xcframework; path = Carthage/Build/FileKit.xcframework; sourceTree = "<group>"; };
+		BBA3F9C828C98FEB00594789 /* SQLite.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SQLite.xcframework; path = Carthage/Build/SQLite.xcframework; sourceTree = "<group>"; };
+		BBB09F6828CA00FA00F5E767 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BBCACE2928C849790057DE3B /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BB9240AA28C5C15700FDB19D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB92410428C5C3BF00FDB19D /* Cron in Frameworks */,
+				BB9240FB28C5C26F00FDB19D /* LaunchAtLogin.xcframework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BB9240A428C5C15700FDB19D = {
+			isa = PBXGroup;
+			children = (
+				BB9240AF28C5C15700FDB19D /* TinyCal */,
+				BB9240AE28C5C15700FDB19D /* Products */,
+				BB9240F928C5C26F00FDB19D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BB9240AE28C5C15700FDB19D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BB9240AD28C5C15700FDB19D /* TinyCal.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BB9240AF28C5C15700FDB19D /* TinyCal */ = {
+			isa = PBXGroup;
+			children = (
+				BB9240DF28C5C19800FDB19D /* Assets.xcassets */,
+				BB9240C228C5C19800FDB19D /* TinyCalApp.swift */,
+				BB9240D528C5C19800FDB19D /* ContentView.swift */,
+				BB9240C328C5C19800FDB19D /* Views */,
+				BB9240D128C5C19800FDB19D /* Models */,
+				BB9240D628C5C19800FDB19D /* View Models */,
+				BB9240C028C5C19800FDB19D /* Services */,
+				BB9240CB28C5C19800FDB19D /* Extensions */,
+				BB9240D828C5C19800FDB19D /* Utils */,
+				BBB09F6728CA00FA00F5E767 /* Preview Content */,
+				BB9240E028C5C19900FDB19D /* TinyCal.entitlements */,
+				BB9240BF28C5C19800FDB19D /* TinyCal-Bridging-Header.h */,
+			);
+			path = TinyCal;
+			sourceTree = "<group>";
+		};
+		BB9240C028C5C19800FDB19D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				BB9240C128C5C19800FDB19D /* Webservice.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		BB9240C328C5C19800FDB19D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BB9240C528C5C19800FDB19D /* SettingsView.swift */,
+				BB9240C828C5C19800FDB19D /* CalendarView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BB9240CB28C5C19800FDB19D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BBCACE2928C849790057DE3B /* Extensions.swift */,
+				BB9240CE28C5C19800FDB19D /* Date+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		BB9240D128C5C19800FDB19D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BB9240D228C5C19800FDB19D /* Models.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BB9240D628C5C19800FDB19D /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				BB9240D728C5C19800FDB19D /* HolidayViewModel.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		BB9240D828C5C19800FDB19D /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				BB9240D928C5C19800FDB19D /* Constants.swift */,
+				BB9240DA28C5C19800FDB19D /* Date.swift */,
+				BB9240DB28C5C19800FDB19D /* File.swift */,
+				BB9240DC28C5C19800FDB19D /* Common.swift */,
+				BB9240DD28C5C19800FDB19D /* EventMonitor.swift */,
+				BB9240DE28C5C19800FDB19D /* EventBus.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		BB9240F928C5C26F00FDB19D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BBA3F9C828C98FEB00594789 /* SQLite.xcframework */,
+				BBA3F9C528C8C85600594789 /* FileKit.xcframework */,
+				BB9240FA28C5C26F00FDB19D /* LaunchAtLogin.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BBB09F6728CA00FA00F5E767 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				BBB09F6828CA00FA00F5E767 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BB9240AC28C5C15700FDB19D /* TinyCal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB9240BC28C5C15900FDB19D /* Build configuration list for PBXNativeTarget "TinyCal" */;
+			buildPhases = (
+				BB9240A928C5C15700FDB19D /* Sources */,
+				BB9240AA28C5C15700FDB19D /* Frameworks */,
+				BB9240AB28C5C15700FDB19D /* Resources */,
+				BB9240FD28C5C26F00FDB19D /* Embed Frameworks */,
+				BB9240FE28C5C27500FDB19D /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TinyCal;
+			packageProductDependencies = (
+				BB92410328C5C3BF00FDB19D /* Cron */,
+			);
+			productName = TinyCal;
+			productReference = BB9240AD28C5C15700FDB19D /* TinyCal.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BB9240A528C5C15700FDB19D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					BB9240AC28C5C15700FDB19D = {
+						CreatedOnToolsVersion = 13.4.1;
+						LastSwiftMigration = 1340;
+					};
+				};
+			};
+			buildConfigurationList = BB9240A828C5C15700FDB19D /* Build configuration list for PBXProject "TinyCal" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BB9240A428C5C15700FDB19D;
+			packageReferences = (
+				BB92410228C5C3BF00FDB19D /* XCRemoteSwiftPackageReference "Cron-Swift" */,
+			);
+			productRefGroup = BB9240AE28C5C15700FDB19D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BB9240AC28C5C15700FDB19D /* TinyCal */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BB9240AB28C5C15700FDB19D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBB09F6928CA00FB00F5E767 /* Preview Assets.xcassets in Resources */,
+				BB9240F828C5C19900FDB19D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BB9240FE28C5C27500FDB19D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${PROJECT_DIR}/Carthage/Build/LaunchAtLogin.xcframework/macos-arm64_x86_64/LaunchAtLogin.framework/Resources/copy-helper.sh\"\n\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BB9240A928C5C15700FDB19D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBCACE2A28C849790057DE3B /* Extensions.swift in Sources */,
+				BB9240F728C5C19900FDB19D /* EventBus.swift in Sources */,
+				BB9240F628C5C19900FDB19D /* EventMonitor.swift in Sources */,
+				BB9240F128C5C19900FDB19D /* HolidayViewModel.swift in Sources */,
+				BB9240E428C5C19900FDB19D /* SettingsView.swift in Sources */,
+				BB9240F328C5C19900FDB19D /* Date.swift in Sources */,
+				BB9240EE28C5C19900FDB19D /* Models.swift in Sources */,
+				BB9240F528C5C19900FDB19D /* Common.swift in Sources */,
+				BB9240EB28C5C19900FDB19D /* Date+Extensions.swift in Sources */,
+				BB9240F228C5C19900FDB19D /* Constants.swift in Sources */,
+				BB9240E628C5C19900FDB19D /* CalendarView.swift in Sources */,
+				BB9240F428C5C19900FDB19D /* File.swift in Sources */,
+				BB9240E228C5C19900FDB19D /* TinyCalApp.swift in Sources */,
+				BB9240E128C5C19900FDB19D /* Webservice.swift in Sources */,
+				BB9240F028C5C19900FDB19D /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		BB9240BA28C5C15900FDB19D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BB9240BB28C5C15900FDB19D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		BB9240BD28C5C15900FDB19D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = TinyCal/TinyCal.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TinyCal/Preview Content\"";
+				DEVELOPMENT_TEAM = XNDA84PBM3;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TinyCal/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.daodao.TinyCal;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "TinyCal/TinyCal-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		BB9240BE28C5C15900FDB19D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = TinyCal/TinyCal.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TinyCal/Preview Content\"";
+				DEVELOPMENT_TEAM = XNDA84PBM3;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TinyCal/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.daodao.TinyCal;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "TinyCal/TinyCal-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BB9240A828C5C15700FDB19D /* Build configuration list for PBXProject "TinyCal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB9240BA28C5C15900FDB19D /* Debug */,
+				BB9240BB28C5C15900FDB19D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB9240BC28C5C15900FDB19D /* Build configuration list for PBXNativeTarget "TinyCal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB9240BD28C5C15900FDB19D /* Debug */,
+				BB9240BE28C5C15900FDB19D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BB92410228C5C3BF00FDB19D /* XCRemoteSwiftPackageReference "Cron-Swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Ponyboy47/Cron-Swift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BB92410328C5C3BF00FDB19D /* Cron */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BB92410228C5C3BF00FDB19D /* XCRemoteSwiftPackageReference "Cron-Swift" */;
+			productName = Cron;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = BB9240A528C5C15700FDB19D /* Project object */;
+}
