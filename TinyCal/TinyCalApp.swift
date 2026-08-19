@@ -95,7 +95,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, ObservableObject {
         }
         
         Task {
-            await self.stockListVM.populateStocks(year: Date().toDate(format: "YYYY"))
+            await self.stockListVM.populateStocks(year: Date().toDate(format: "yyyy"))
         }
     }
     

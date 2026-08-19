@@ -15,14 +15,14 @@ extension Date {
     func startOfMonth() -> Date {
         let components = calendar.dateComponents([.year, .month], from: self)
 
-        return calendar.date(from: components)!
+        return calendar.date(from: components) ?? self
     }
 
     func endOfMonth() -> Date {
         var components = DateComponents()
         components.month = 1
         components.second = -1
-        return calendar.date(byAdding: components, to: startOfMonth())!
+        return calendar.date(byAdding: components, to: startOfMonth()) ?? self
     }
 
     var startOfDay: Date {
@@ -36,12 +36,12 @@ extension Date {
 
     func isToday() -> Bool {
         let d = Date()
-        return toDate(format: "YYYY-M-d") == d.toDate(format: "YYYY-M-d")
+        return toDate(format: "yyyy-M-d") == d.toDate(format: "yyyy-M-d")
     }
 
     func isCurrentMouth() -> Bool {
         let d = Date()
-        return toDate(format: "YYYY-M") == d.toDate(format: "YYYY-M")
+        return toDate(format: "yyyy-M") == d.toDate(format: "yyyy-M")
     }
 
     static func parse(year: Int, month: Int) -> Date {
@@ -49,7 +49,7 @@ extension Date {
         let isoDate = "\(year)-\(_month)-14T10:44:00+0000"
 
         let dateFormatter = ISO8601DateFormatter()
-        return dateFormatter.date(from: isoDate)!
+        return dateFormatter.date(from: isoDate) ?? Date()
     }
 
     func getWeekDay() -> Int {
@@ -78,13 +78,13 @@ extension Date {
     }
 
     func addDate(num: Int) -> Date {
-        return Calendar.current.date(byAdding: .day, value: num, to: self)!
+        return Calendar.current.date(byAdding: .day, value: num, to: self) ?? self
     }
 
     func toDate(format: String?) -> String {
         let formatter = DateFormatter()
         formatter.locale = Locale(identifier: "zh_CN")
-        formatter.dateFormat = format ?? "YYYY-MM-dd"
+        formatter.dateFormat = format ?? "yyyy-MM-dd"
 
         return formatter.string(from: self)
     }

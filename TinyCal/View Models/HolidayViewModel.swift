@@ -17,11 +17,18 @@ class HolidayViewModel: ObservableObject {
                 return
             }
 
-            let stocks = try await Webservice().getStocks(url: URL(string: "http://timor.tech/api/holiday/year/" + year)!)
+            guard let url = URL(string: "http://timor.tech/api/holiday/year/" + year) else {
+                print("populateStocks: invalid url for year", year)
+                return
+            }
+            let stocks = try await Webservice().getStocks(url: url)
             if stocks.holiday.count > 0 {
                 self.stocks[year] = stocks.holiday
                 let jsonData = try JSONEncoder().encode(stocks)
-                let jsonString = String(data: jsonData, encoding: .utf8)!
+                guard let jsonString = String(data: jsonData, encoding: .utf8) else {
+                    print("populateStocks: failed to encode cache as utf8 for year", year)
+                    return
+                }
                 f.createFile(fileName: year, data: jsonString)
             }
 

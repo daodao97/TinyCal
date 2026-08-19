@@ -10,10 +10,6 @@ struct ContentView: View {
         self._vm = StateObject(wrappedValue: vm)
     }
 
-    func getDate() -> String {
-        return self.activeDay.toDate
-    }
-
     var body: some View {
         VStack {
             CalendarView(vm: self.vm, activeDate: $activeDay)

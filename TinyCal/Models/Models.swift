@@ -25,11 +25,11 @@ struct Day: Decodable, Hashable {
     }
 
     var isCruurentMonth: Bool {
-        self.date.toDate(format: "MM") == Date().toDate(format: "MM")
+        self.date.toDate(format: "yyyy-MM") == Date().toDate(format: "yyyy-MM")
     }
 
     var isToday: Bool {
-        self.date.toDate(format: "YYYY-MM-dd") == Date().toDate(format: "YYYY-MM-dd")
+        self.date.toDate(format: "yyyy-MM-dd") == Date().toDate(format: "yyyy-MM-dd")
     }
 
     var isWeekend: Bool {
@@ -42,8 +42,14 @@ struct ActiveDay: Equatable {
     var month: Int
     var day: Int
 
-    var toDate: String {
-        String(self.year) + String(self.month) + String(self.day)
+    /// 由 year/month/day 构造出的 `Date`，供需要按天比较的场景使用，
+    /// 避免依赖无分隔符的字符串拼接（历史上曾导致选中日期高亮碰撞）。
+    var date: Date {
+        var components = DateComponents()
+        components.year = self.year
+        components.month = self.month
+        components.day = self.day
+        return Calendar.current.date(from: components) ?? Date()
     }
 
     static func == (lhs: ActiveDay, rhs: ActiveDay) -> Bool {

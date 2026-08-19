@@ -23,11 +23,9 @@ struct CalendarView: View {
     }
 
     func reflush() {
-        let d = Date()
-        var day = d.getDay()
-        if d.toDate(format: "YYYYM") != String(self.year) + String(self.month) {
-            day = 1
-        }
+        let today = Date()
+        let isCurrentMonth = today.getYear() == self.year && today.getMonth() == self.month
+        let day = isCurrentMonth ? today.getDay() : 1
 
         self.activeDate = ActiveDay(year: self.year, month: self.month, day: day)
         self.allDays = monthDates(year: self.year, month: self.month)
@@ -82,7 +80,7 @@ struct CalendarView: View {
     }
 
     func isHoliday(d: Date) -> Holiday? {
-        if let y = self.vm.stocks[d.toDate(format: "YYYY")] {
+        if let y = self.vm.stocks[d.toDate(format: "yyyy")] {
             if let h = y[d.toDate(format: "MM-dd")] {
                 if h.isHoliday {
                     return h
@@ -93,7 +91,7 @@ struct CalendarView: View {
     }
 
     func isHolidayWork(d: Date) -> Holiday? {
-        if let y = self.vm.stocks[d.toDate(format: "YYYY")] {
+        if let y = self.vm.stocks[d.toDate(format: "yyyy")] {
             if let h = y[d.toDate(format: "MM-dd")] {
                 if !h.isHoliday {
                     return h
@@ -119,7 +117,7 @@ struct CalendarView: View {
         return nil
     }
 
-    func getDayExtrColor(day: Day) -> Color? {
+    func getDayExtrColor(day: Day) -> Color {
         if self.settings.showHoliday {
             if let _ = self.isHoliday(d: day.date) {
                 return .purple
@@ -132,7 +130,7 @@ struct CalendarView: View {
     }
 
     func isActive(d: Date) -> Bool {
-        return d.toDate(format: "YYYYMd") == self.activeDate.toDate
+        return Calendar.current.isDate(d, equalTo: self.activeDate.date, toGranularity: .day)
     }
 
     @ViewBuilder
@@ -142,7 +140,7 @@ struct CalendarView: View {
             if let ext = self.getDayExtr(day: day) {
                 Text(ext)
                     .font(.system(size: 8))
-                    .foregroundColor(self.getDayExtrColor(day: day)!)
+                    .foregroundColor(self.getDayExtrColor(day: day))
             }
         }
         .frame(width: self.width, height: self.height)

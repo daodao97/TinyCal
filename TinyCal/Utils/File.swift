@@ -15,12 +15,15 @@ class File {
     }
 
     func dir(fileName: String) -> URL {
-        let dir = self.baseDIR()
+        let path = self.baseDIR().appendingPathComponent(fileName)
+        let parentDir = path.deletingLastPathComponent()
 
-        let path = dir.appendingPathComponent(fileName)
-
-        if !self.fm.fileExists(atPath: dir.path) {
-            try! self.fm.createDirectory(atPath: dir.path, withIntermediateDirectories: true)
+        if !self.fm.fileExists(atPath: parentDir.path) {
+            do {
+                try self.fm.createDirectory(atPath: parentDir.path, withIntermediateDirectories: true)
+            } catch {
+                print("createDirectory err", error)
+            }
         }
 
         return path
